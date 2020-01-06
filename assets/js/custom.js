@@ -5,44 +5,22 @@
       dots: true,
       infinite: false,
       speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
+      prevArrow:'.prev-arrow',
+      nextArrow: '.next-arrow',
       responsive: [
-          {
-              breakpoint: 4480,
-              settings: 'unslick'
-            },
-        {
-          breakpoint: 768,
-          settings: {
-              settings: 'unslick'
-          }
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-              slidesToShow: 3,
-              slidesToScroll: 4,
-              dots: true,
-              focusOnSelect: false,
-              arrows: true,
-              touchMove: false,
-              draggable: true,
-              swipe: true
-          }
-        },
         {
           breakpoint: 480,
           settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              dots: true,
-              focusOnSelect: false,
-              arrows: true,
-              touchMove: false,
-              draggable: true,
-              swipe: true
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll:1,
+            draggable: true
           }
         }
-        
       ]
     });
     $('.slicked__card').slick({
@@ -50,45 +28,92 @@
       dots: true,
       infinite: false,
       speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      prevArrow:'.prev-arrow',
+      nextArrow: '.next-arrow',
       responsive: [
-          {
-              breakpoint: 4480,
-              settings: 'unslick'
-            },
-        {
-          breakpoint: 768,
-          settings: {
-              settings: 'unslick'
-          }
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              dots: true,
-              focusOnSelect: false,
-              arrows: true,
-              touchMove: false,
-              draggable: true,
-              swipe: true
-          }
-        },
         {
           breakpoint: 480,
           settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: true,
-              focusOnSelect: false,
-              arrows: true,
-              touchMove: false,
-              draggable: true,
-              swipe: true
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll:1,
+            draggable: true
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
+
+     
     });
+    $('.slick__partners').slick({
+  
+    
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll:1,
+            draggable: true
+          }
+        },
+        {
+          breakpoint: 360,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll:1,
+            draggable: true
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: 'unslick'
+        },
+        {
+          breakpoint: 4480,
+          settings: 'unslick'
+        },
+    {
+      breakpoint: 1024,
+          settings: 'unslick'
+    },
+    {
+      breakpoint: 769,
+      settings: 'unslick'
+    },
+      ]
+
+     
+    });
+
+    $(document).ready(function(){
+
+      $(function(){
+       
+          $(document).on( 'scroll', function(){
+       
+            if ($(window).scrollTop() > 100) {
+            $('.scroll-top-wrapper').addClass('show');
+          } else {
+            $('.scroll-top-wrapper').removeClass('show');
+          }
+        });
+       
+        $('.scroll-top-wrapper').on('click', scrollToTop);
+      });
+       
+      function scrollToTop() {
+        verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+        element = $('body');
+        offset = element.offset();
+        offsetTop = offset.top;
+        $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+      }
+      
+      });
