@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?h64fel');
+  src:  url('fonts/icomoon.eot?h64fel#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?h64fel') format('truetype'),
+    url('fonts/icomoon.woff?h64fel') format('woff'),
+    url('fonts/icomoon.svg?h64fel#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-noun_Next_8300:before {
+  content: "\e90a";
+}
+.icon-noun_previous_2410283:before {
+  content: "\e90b";
+}
+.icon-noun_id_1262897:before {
+  content: "\e902";
+}
+.icon-noun_Radio_972605:before {
+  content: "\e909";
+}
+.icon-noun_online-messaging:before {
+  content: "\e901";
+}
+.icon-noun_id:before {
+  content: "\e908";
+}
+.icon-noun_Angle:before {
+  content: "\e906";
+}
+.icon-noun_Angle_2168866:before {
+  content: "\e907";
+}
+.icon-noun_Circus-Tent_12129:before {
+  content: "\e900";
+}
+.icon-nounNewspaper:before {
+  content: "\e903";
+}
+.icon-noun_TV:before {
+  content: "\e905";
+}
+.icon-newspaper:before {
+  content: "\e904";
+}
+.icon-tv:before {
+  content: "\e95b";
+}
+.icon-play2:before {
+  content: "\ea15";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
